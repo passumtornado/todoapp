@@ -1,0 +1,54 @@
+.todo-contianer{
+    position:relative;
+    width:100%;
+    display:flex;
+    justify-content:start;
+    align-items:flex-start;
+}
+.todo-contianer .card{
+    padding:1rem;
+    width:100%;
+}
+.card h5{
+    padding:.2rem;
+    font-family:'Poppins';
+    font-size:13px;
+    font-weight:600;
+}
+.card p{
+    font-family:'Work sans';
+    font-size:14px;
+    font-weight:400
+}
+.action-section{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.action-section .check, .action-section .trash{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:.4rem;
+    border-radius:50px;
+    color:#fff;
+    margin:0 .2rem;
+}
+.action-section .check{
+    background:green;
+    cursor:pointer;
+}
+.action-section .trash{
+    background:red;
+    cursor:pointer;
+}
+.action-section .fas{
+    font-size:10px;
+}
+.card.completed{
+    border-top:2px solid red;
+}
+.card.completed h5,.card.completed p{
+    text-decoration:line-through;
+    opacity:0.5;
+}
